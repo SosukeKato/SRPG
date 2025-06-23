@@ -11,6 +11,7 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 /[Aa]ssts/_WorkSpace/Sound/
+/[Aa]ssts/_WorkSpace/Image/
 *.log
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
