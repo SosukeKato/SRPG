@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    [SerializeField]
+    List<GameObject> _EnemyList;
+    [SerializeField]
+    List<Transform> _EnemySpawnerList;
     // Start is called before the first frame update
     void Start()
     {
