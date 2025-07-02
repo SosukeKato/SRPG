@@ -16,9 +16,8 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        r = Random.Range(0, _EnemyList.Count);
-        obj = Instantiate(_EnemyList, _EnemySpawnerList[r].position,Quaternion.identity);   
-        
+        r = Random.Range(0, _EnemySpawnNumber);
+        obj = Instantiate(_EnemyList[_EnemySpawnNumber], _EnemySpawnerList[r].position,Quaternion.identity);       
     }
 
     // Update is called once per frame
