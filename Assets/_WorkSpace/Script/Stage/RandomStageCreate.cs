@@ -11,7 +11,6 @@ public class RandomStageCreate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        r = Random.Range(0, _FieldBlock.Count);
         for (int i = 0; i < 15; i++) 
         {
             for (int j = 0; j < 15; j++)
@@ -24,6 +23,6 @@ public class RandomStageCreate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        r = Random.Range(0, _FieldBlock.Count);
     }
 }
