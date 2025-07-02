@@ -4,10 +4,21 @@ using UnityEngine;
 
 public class RandomStageCreate : MonoBehaviour
 {
+    [SerializeField]
+    List<GameObject> _FieldBlock;
+
+    int r;
     // Start is called before the first frame update
     void Start()
     {
-        
+        r = Random.Range(0, _FieldBlock.Count);
+        for (int i = 0; i < 15; i++) 
+        {
+            for (int j = 0; j < 15; j++)
+            {
+                Instantiate(_FieldBlock[r], new Vector3(i, j), Quaternion.identity);
+            }
+        }
     }
 
     // Update is called once per frame
