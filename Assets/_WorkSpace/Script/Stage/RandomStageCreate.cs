@@ -15,6 +15,7 @@ public class RandomStageCreate : MonoBehaviour
         {
             for (int j = 0; j < 15; j++)
             {
+                r = Random.Range(0, _FieldBlock.Count);
                 Instantiate(_FieldBlock[r], new Vector3(i, 0, j), Quaternion.identity);
             }
         }
@@ -23,6 +24,6 @@ public class RandomStageCreate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        r = Random.Range(0, _FieldBlock.Count);
+        
     }
 }
