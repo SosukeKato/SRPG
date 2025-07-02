@@ -16,7 +16,7 @@ public class RandomStageCreate : MonoBehaviour
         {
             for (int j = 0; j < 15; j++)
             {
-                Instantiate(_FieldBlock[r], new Vector3(i, j), Quaternion.identity);
+                Instantiate(_FieldBlock[r], new Vector3(i, 0, j), Quaternion.identity);
             }
         }
     }

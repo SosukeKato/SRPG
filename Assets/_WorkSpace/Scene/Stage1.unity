@@ -131,6 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 269039154}
+  - component: {fileID: 269039155}
   m_Layer: 0
   m_Name: StageCreater
   m_TagString: Untagged
@@ -153,6 +154,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &269039155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269039153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c5ed57ae6319704085ecca579662b25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _FieldBlock:
+  - {fileID: 8998731378227472773, guid: 41aa385f0ffbb9e46ad32cddbc086943, type: 3}
+  - {fileID: 5405395381194699719, guid: 236c96e61cd20a942923249f8da89e5b, type: 3}
+  - {fileID: 4441603438348845812, guid: 55972180f8947674bb90e1fafacca55f, type: 3}
 --- !u!1 &966336118
 GameObject:
   m_ObjectHideFlags: 0
