@@ -11,13 +11,15 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField]
     int _EnemySpawnNumber = 0;
 
-    int r;
+    int _EnemyRandomSelect;
+    int _EnemtSpawnRandomSelect;
     GameObject obj;
     // Start is called before the first frame update
     void Start()
     {
-        r = Random.Range(0, _EnemySpawnNumber);
-        obj = Instantiate(_EnemyList[_EnemySpawnNumber], _EnemySpawnerList[r].position,Quaternion.identity);       
+        _EnemyRandomSelect = Random.Range(0, _EnemySpawnNumber);
+        _EnemtSpawnRandomSelect = Random.Range(0, _EnemtSpawnRandomSelect);
+        obj = Instantiate(_EnemyList[_EnemyRandomSelect], _EnemySpawnerList[_EnemtSpawnRandomSelect].position,Quaternion.identity);       
     }
 
     // Update is called once per frame
