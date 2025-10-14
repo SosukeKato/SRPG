@@ -1,18 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    float _maxHP;
 
-    // Update is called once per frame
+    public float _nowHP;
     void Update()
     {
-        
+        if(_nowHP >= _maxHP)
+        {
+            _nowHP = _maxHP;
+        }
+        if(_nowHP <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
