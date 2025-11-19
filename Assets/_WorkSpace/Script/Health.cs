@@ -6,13 +6,14 @@ public class Health : MonoBehaviour
     float _maxHP;
 
     public float _nowHP;
-    void Update()
+
+    void HP()
     {
-        if(_nowHP >= _maxHP)
+        if (_nowHP >= _maxHP)
         {
             _nowHP = _maxHP;
         }
-        if(_nowHP <= 0)
+        if (_nowHP <= 0)
         {
             Destroy(gameObject);
         }
